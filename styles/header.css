@@ -1,4 +1,17 @@
 .header{
-    background-color: rgb(202, 120, 120);
-    color: blanchedalmond;
+    background-color: rgb(183, 182, 255);
+    color: rgb(135, 85, 10);
+}
+
+.header__title {
+    color: rgb(0, 0, 193);
+    font-size: 40px;
+    Text-align: center;
+}
+
+.courses {
+    color: rgba(4, 8, 247, 0.865);
+    font-size: 25px;
+    font-style: italic;
+    Text-align: center;
 }
