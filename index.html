@@ -12,68 +12,144 @@
         <img class='header__logo' src="images/logo2.webp" alt="" width="100">
         <h1 class="header__title">Онлайн-Курсы по Открытию Бизнеса</h1>
         <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu_item menu_item--active"><a class="menu_link" href="index.html">Главная</a></li>
-                <li class="menu_item"><a class="menu_link" href="catalog.html">Каталог курсов</a></li>
-                <li class="menu_item"><a class="menu_link" href="#">Контакты</a></li>
-                <li class="menu_item"><a class="menu_link" href="#">Email</a></li>
-                <Li class="menu_item"><a class="menu_link" href="#">Номер телефона</a></Li>
-                <li class="menu_item"><a class="menu_link" href="#">Социальные сети</a></li>
+            <ul class="menu__list">
+                <li class="menu__item menu_item--active"><a class="menu_link" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог курсов</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Email</a></li>
+                <Li class="menu__item"><a class="menu__link" href="#">Номер телефона</a></Li>
+                <li class="menu__item"><a class="menu__link" href="#">Социальные сети</a></li>
             </ul>
         </nav>
-        <button class="header_login"><a href="#">Вход</a></button>
+        <button class="header__login"><a href="#">Вход</a></button>
         <button class="header__registration"><a href="#">Регестрация</a></button>
         <search class="header__search">
-            <form>
+            <form class="header__form">
               <input type="search">
-              <button>Поиск</button>
+              <button class="search">Поиск</button>
             </form>
           </search>
     </header>
     <main class="main">
-        <section>
-            <div class="courses">
-                <h2>Бизнес-курсы по любому направлению</h2>
-                <a href="#" target="_blank">Все курсы</a>
+        <img class='information__picture' src="images/Scenes02.png" alt="" width="100">
+        <section class="information">
+            <h1 class="information__title">Информация о нас</h1>
+            <h2 class="information__subtitle">Какие услуги мы предоставляем?</h2>
+            <p class="information__text">
+                Наш сайт предлагает онлайн-курсы для открытия и ведения бизнеса. Мы предоставляем
+                обучающие материалы, видеоуроки, вебинары и практические задания, которые помогут вам освоить 
+                ключевые аспекты предпринимательства. Наши курсы охватывают различные темы, включая 
+                бизнес-планирование, маркетинг, финансовый менеджмент, управление проектами и юридические аспекты 
+                ведения бизнеса. Мы стремимся предоставить вам все необходимые инструменты и знания для успешного 
+                старта и развития вашего бизнеса.
+            </p>
+            <h2 class="information__subtitle">Для кого предназначены наши курсы?</h2>
+            <p class="information__text">
+                Наши курсы предназначены для начинающих предпринимателей, студентов, желающих открыть 
+                собственное дело, а также для тех, кто уже имеет бизнес, но хочет улучшить свои навыки и знания. 
+                Мы также рады видеть людей, которые просто интересуются предпринимательством и хотят узнать больше 
+                о том, как начать свой путь в этом направлении.
+            </p>
+            <h2 class="information__subtitle">Какие проблемы мы решаем?</h2>
+            <p class="information__text">
+                Мы помогаем решить множество проблем, с которыми сталкиваются начинающие предприниматели, таких 
+                как отсутствие знаний о том, как начать бизнес, недостаток уверенности в своих силах, сложности 
+                в составлении бизнес-плана, трудности в привлечении клиентов и управлении финансами. Наши курсы 
+                предоставляют практические советы и стратегии, которые помогут вам преодолеть эти препятствия и 
+                успешно запустить и развивать свой бизнес.
+            </p>
+        </section>
+
+        <section class="proposal">
+            <h1 class="proposal__title">Предложение месяца!</h1>
+            <img class='proposal__picture' src="images/Scenes07.png" alt="" width="100">
+            <p class="proposal__info"> 
+                Управление временем — это ключ к успеху в бизнесе и жизни! Мы рады предложить вам уникальную 
+                возможность пройти наш бесплатный курс "Управление временем". Этот курс поможет вам научиться 
+                эффективно планировать свой день, расставлять приоритеты и достигать поставленных целей без стресса 
+                и перегрузок.
+            </p>
+            <h2 class="proposal__subtitle">Что вы получите на курсе?</h2>
+            <p class="proposal__info">
+                Практические техники и инструменты для оптимизации вашего времени.
+                Советы по созданию продуктивного рабочего графика.
+                Методы борьбы с прокрастинацией и отвлекающими факторами.
+                Упражнения для повышения концентрации и эффективности.
+            </p>
+            <li class="proposal__item">
+                <img class="proposal__img" src="images/one_k.png" alt="" width="50" height="50">
+                <h3 class="proposal__subtittle">Управление временем</h3>
+                <p class="proposal__discription">Длительность: 1 месяц</p>
+                <p class="proposal__discription">Модулей: 4</p>
+                <a class='proposal__link' href="#">Узнать подробнее</a>
+                <span class="proposal__price">БЕСПЛАТНО</span>
+            </li>
+            <p class="proposal__info">
+                Не упустите шанс улучшить свои навыки управления временем и сделать шаг к более организованной 
+                и успешной жизни! Записывайтесь на курс прямо сейчас и начните свой путь к эффективному управлению 
+                временем!
+            </p>
+        </section>
+
+        <section class="courses">
+            <div class="courses__header">
+                <h2 class="courses__title">Бизнес-курсы по любому направлению</h2>
+                <a class='courses__link' href="#" target="_blank">Все курсы</a>
             </div>
-            <ul class="main_menu">
-                <li>
-                    <img src="images/one_k.png" alt="" width="50" height="50">
-                    <h3>какой то курс</h3>
-                    <p>длительность и тд</p>
-                    <p>Модулей: 3</p>
-                    <a href="#">Узнать подробнее</a>
-                    <span>БЕСПЛАТНО</span>
+            <ul class="courses__list">
+                <li class="courses__item">
+                    <img class="courses__img" src="images/one_k.png" alt="" width="50" height="50">
+                    <h3 class="courses__subtittle">Курс по маркетингу</h3>
+                    <p class="courses__discription">Длительность: 3 месяца</p>
+                    <p class="courses__discription">Модулей: 7</p>
+                    <a class='courses__link' href="#">Узнать подробнее</a>
+                    <span class="courses__price">3 000 рублей</span>
                 </li>
-                <li>
-////
+                <li class="courses__item">
+                    <img class="courses__img" src="images/one_k.png" alt="" width="50" height="50">
+                    <h3 class="courses__subtittle">Основы бухгалтерского учета</h3>
+                    <p class="courses__discription">Длительность: 2 месяца</p>
+                    <p class="courses__discription">Модулей: 5</p>
+                    <a class='courses__link' href="#">Узнать подробнее</a>
+                    <span class="courses__price">2 500 рублей</span>
                 </li>
-                <li>
-////
+                <li class="courses__item">
+                    <img class="courses__img" src="images/one_k.png" alt="" width="50" height="50">
+                    <h3 class="courses__subtittle">Основы предпринимательства</h3>
+                    <p class="courses__discription">Длительность: 4 месяца</p>
+                    <p class="courses__discription">Модулей: 5</p>
+                    <a class='courses__link' href="#">Узнать подробнее</a>
+                    <span class="courses__price">4 500 рублей</span>
                 </li>
             </ul>
         </section>
-        <section>
 
+        <section class="reviews">
+            <p class="reviews__user">
+                отзывы от пользователей
+            </p>
         </section>
-        <section class="enter">
-            <form action="/">
-                <h1>Вход в личный кабинет</h1>
-                <input type="tel" name="phone" placeholder="Номер телефона пользователя" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <button>Войти</button>
+
+        <section class="entrance">
+            <form class="entrance__form" action="/">
+                <a>картинка или анимация какая-нибудь</a>
+                <h1 class="entrance__tittle">Вход в личный кабинет</h1>
+                <input class="entrance__input" type="tel" name="phone" placeholder="Номер телефона пользователя" required>
+                <input class="entrance__input" type="password" name="password" placeholder="Пароль" required>
+                <button class="entrance__button">Войти</button>
             </form>
         </section>
 
     </main>
+
     <footer class="footer">
-        <p>Сайт создан Огарковой Юлией, группа Ст-23</p>
-        <ul class="ul">
-            ////
-            <p>VK:<a href="https://vk.com/ogarkova_j">https://vk.com/ogarkova_j</a></p>
-            
+        <img class='footer__logo' src="images/logo2.webp" alt="" width="100">
+        <p class="footer__title">Сайт создан Огарковой Юлией, группа Ст-23</p>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Классы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Лицензия</a></li>
+            <p class="footer__contacts">VK:<a href="https://vk.com/ogarkova_j">https://vk.com/ogarkova_j</a></p>
         </ul>
-        
     </footer>
 </body>
 </html>
