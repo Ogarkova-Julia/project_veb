@@ -8,12 +8,22 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <img class='header__logo' src="images/logo2.webp" alt="Логотип онлайн-курсов" width="100">
-        <h1 class="header__title">Онлайн-Курсы по Открытию Бизнеса</h1>
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
+            <img class='header__logo' src="images/logo4.png" alt="Логотип онлайн-курсов" width="100">
+            <h1 class="header__title">Онлайн-Курсы по Открытию Бизнеса</h1>
+        </a>
+        <form class="header__form">
+            <label for="search"></label>
+            <input type="search" id="search" placeholder="Введите запрос">
+            <button class="search" pe="submit">Поиск</button>
+        </form>        
+        <div class="header__auth-buttons">
+            <button class="header__login" onclick="location.href='#';">Войти</button>
+        </div>
         <nav class="header__menu menu">
             <ul class="menu__list">
-                <li class="menu__item menu_item--active"><a class="menu_link" href="index.html">Главная</a></li>
+                <li class="menu__item menu_item--active"><a class="menu__link" href="index.html">Главная</a></li>
                 <li class="menu__item"><a class="menu__link" href="catalog.html" target="_blank" rel="noopener noreferrer">Каталог курсов</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Email</a></li>
@@ -21,36 +31,46 @@
                 <li class="menu__item"><a class="menu__link" href="#">Социальные сети</a></li>
             </ul>
         </nav>
-        <button class="header__login" onclick="location.href='#';">Вход</button>
-        <button class="header__registration" onclick="location.href='#';">Регестрация</button>
-            <form class="header__form">
-                <label for="search"></label>
-                <input type="search" id="search" placeholder="Введите запрос">
-                <button class="search" pe="submit">Поиск</button>
-            </form>
     </header>
-    <main class="main">
+    <main class="main container">
         <section class="information">
-            <img class='information__picture' src="images/Scenes02.png" alt="Информация о нас" width="100">
             <h2 class="information__title">Информация о нас</h2>
-            <h4 class="information__subtitle">Какие услуги мы предоставляем?</h4>
-            <p class="information__text">
+        </section>
+        <section class="information__one">
+            <div class="information__one__wrap-left">
+            <h4 class="information__one__subtitle">Какие услуги мы предоставляем?</h4>
+            <p class="information__one__text">
                 Наш сайт предлагает онлайн-курсы для открытия и ведения бизнеса. Мы предоставляем
                 обучающие материалы, видеоуроки, вебинары и практические задания, которые помогут вам освоить 
                 ключевые аспекты предпринимательства. Наши курсы охватывают различные темы, включая 
                 бизнес-планирование, маркетинг, финансовый менеджмент, управление проектами и юридические аспекты 
                 ведения бизнеса. Мы стремимся предоставить вам все необходимые инструменты и знания для успешного 
-                старта и развития вашего бизнеса.
-            </p>
-            <h2 class="information__subtitle">Для кого предназначены наши курсы?</h2>
-            <p class="information__text">
-                Наши курсы предназначены для начинающих предпринимателей, студентов, желающих открыть 
-                собственное дело, а также для тех, кто уже имеет бизнес, но хочет улучшить свои навыки и знания. 
-                Мы также рады видеть людей, которые просто интересуются предпринимательством и хотят узнать больше 
-                о том, как начать свой путь в этом направлении.
-            </p>
-            <h2 class="information__subtitle">Какие проблемы мы решаем?</h2>
-            <p class="information__text">
+                старта и развития вашего бизнеса. </p>
+            <a class="information__one__button" href="#"> Зарегестрироваться на курсы</a>
+            </div>
+            <div class="information__one__wrap-right">
+                <img class='information__one__picture' src="images/Scenes02.png" alt="Информация о нас" width="100">
+            </div>
+        </section>
+
+        <section class="information__two">
+            <div class="information__two__wrap-left">
+                <img class='information__two__picture' src="images/Scenes05.png" alt="Информация о нас" width="100">
+            </div>
+            <div class="information__two__wrap-right">
+                <h2 class="information__two__subtitle">Для кого предназначены наши курсы?</h2>
+                <p class="information__two__text">
+                    Наши курсы предназначены для начинающих предпринимателей, студентов, желающих открыть 
+                    собственное дело, а также для тех, кто уже имеет бизнес, но хочет улучшить свои навыки и знания. 
+                    Мы также рады видеть людей, которые просто интересуются предпринимательством и хотят узнать больше 
+                    о том, как начать свой путь в этом направлении.
+                </p>
+            </div>
+        </section>
+
+        <section class="information__three">
+            <h2 class="information__three__subtitle">Какие проблемы мы решаем?</h2>
+            <p class="information__three__text">
                 Мы помогаем решить множество проблем, с которыми сталкиваются начинающие предприниматели, таких 
                 как отсутствие знаний о том, как начать бизнес, недостаток уверенности в своих силах, сложности 
                 в составлении бизнес-плана, трудности в привлечении клиентов и управлении финансами. Наши курсы 
@@ -60,14 +80,20 @@
         </section>
 
         <section class="proposal">
-            <h2 class="proposal__title">Предложение месяца!</h2>
-            <img class='proposal__picture' src="images/Scenes07.png" alt="Предложение месяца" width="100">
-            <p class="proposal__info"> 
-                Управление временем — это ключ к успеху в бизнесе и жизни! Мы рады предложить вам уникальную 
-                возможность пройти наш бесплатный курс "Управление временем". Этот курс поможет вам научиться 
-                эффективно планировать свой день, расставлять приоритеты и достигать поставленных целей без стресса 
-                и перегрузок.
-            </p>
+            <div class="proposal-left">
+                <img class='proposal__picture' src="images/Scenes07.png" alt="Предложение месяца" width="100">
+            </div>
+            <div class="proposal-right">
+                <h2 class="proposal__title">Предложение месяца!</h2>
+                <p class="proposal__info"> 
+                    Управление временем — это ключ к успеху в бизнесе и жизни! Мы рады предложить вам уникальную 
+                    возможность пройти наш бесплатный курс "Управление временем". Этот курс поможет вам научиться 
+                    эффективно планировать свой день, расставлять приоритеты и достигать поставленных целей без стресса 
+                    и перегрузок.
+                </p>
+            </div>
+        </section>
+        <section class="proposal1"> 
             <h2 class="proposal__subtitle">Что вы получите на курсе?</h2>
             <p class="proposal__info">
                 Практические техники и инструменты для оптимизации вашего времени.
@@ -75,9 +101,14 @@
                 Методы борьбы с прокрастинацией и отвлекающими факторами.
                 Упражнения для повышения концентрации и эффективности.
             </p>
+        </section>
+        <section class="proposal2">
             <ul class="proposal__list">
                 <li class="proposal__item">
-                    <img class="proposal__img" src="images/one_k.png" alt="Курс по усправлению временем" width="50" height="50">
+                <div class="proposal__img">
+                    <img class="proposal__img1" src="images/Tilda_Icons_17ked_hat.png" alt="Курс по усправлению временем" width="50" height="50">
+                    <img class="proposal__img2" src="images/one_k.png" alt="Курс по усправлению временем" width="50" height="50">
+                </div>    
                     <h3 class="proposal__subtittle">Управление временем</h3>
                     <p class="proposal__discription">Длительность: 1 месяц</p>
                     <p class="proposal__discription">Модулей: 4</p>
@@ -85,21 +116,25 @@
                     <span class="proposal__price">БЕСПЛАТНО</span>
                 </li>
             </ul>
-            <p class="proposal__info">
+        </section>
+        <section class="proposal3">
+            <p class="proposal__info1">
                 Не упустите шанс улучшить свои навыки управления временем и сделать шаг к более организованной 
                 и успешной жизни! Записывайтесь на курс прямо сейчас и начните свой путь к эффективному управлению 
                 временем!
             </p>
         </section>
-
         <section class="courses">
             <div class="courses__header">
                 <h2 class="courses__title">Бизнес-курсы по любому направлению</h2>
-                <a class='courses__link' href="#" target="_blank">Все курсы</a>
+                <a class='courses__link' href="catalog.html" target="_blank">Все курсы</a>
             </div>
             <ul class="courses__list">
                 <li class="courses__item">
-                    <img class="courses__img" src="images/one_k.png" alt="Курс по маркетингу" width="50" height="50">
+                <div class="image-container">
+                    <img class="courses__img1" src="images/Tilda_Icons_17ked_hat.png" alt="Курс по маркетингу" width="50" height="50">
+                    <img class="courses__img2" src="images/one_k.png" alt="Курс по маркетингу" width="50" height="50">
+                </div>
                     <h4 class="courses__subtittle">Курс по маркетингу</h4>
                     <p class="courses__discription">Длительность: 3 месяца</p>
                     <p class="courses__discription">Модулей: 7</p>
@@ -107,7 +142,10 @@
                     <span class="courses__price">3 000 рублей</span>
                 </li>
                 <li class="courses__item">
-                    <img class="courses__img" src="images/one_k.png" alt="Курс по основам бухгалтерского учета" width="50" height="50">
+                <div class="image-container1">
+                    <img class="courses__img3" src="images/Tilda_Icons_17ked_test.png" alt="Курс по основам бухгалтерского учета" width="50" height="50">
+                    <img class="courses__img4" src="images/Tilda_Icons_17ked_test-1.png" alt="Курс по основам бухгалтерского учета" width="50" height="50">
+                </div>
                     <h4 class="courses__subtittle">Основы бухгалтерского учета</h4>
                     <p class="courses__discription">Длительность: 2 месяца</p>
                     <p class="courses__discription">Модулей: 5</p>
@@ -115,7 +153,10 @@
                     <span class="courses__price">2 500 рублей</span>
                 </li>
                 <li class="courses__item">
-                    <img class="courses__img" src="images/one_k.png" alt="Курс по основам предпринимательства" width="50" height="50">
+                <div class="image-container2">
+                    <img class="courses__img5" src="images/Tilda_Icons_9ta_coins.png" alt="Курс по основам предпринимательства" width="50" height="50">
+                    <img class="courses__img6" src="images/Tilda_Icons_9ta_coins-1.png" alt="Курс по основам предпринимательства" width="50" height="50">
+                </div>
                     <h4 class="courses__subtittle">Основы предпринимательства</h4>
                     <p class="courses__discription">Длительность: 4 месяца</p>
                     <p class="courses__discription">Модулей: 5</p>
@@ -127,16 +168,41 @@
 
         <section class="reviews">
             <h2 class="reviews__title">Отзывы наших пользователей</h2>
-            <p class="reviews__user">
-                данный блок будет доработан к итоговой сдаче проекта.
-            </p>
+            <div class="reviews__list">
+                <div class="reviews__item">
+                    <img src="images/ali.jpg" alt="Пользователь 1" class="reviews__avatar">
+                    <div class="reviews__content">
+                        <p class="reviews__user">"Отличный сервис! Очень довольна качеством обучения."</p>
+                        <div class="reviews__rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <img src="images/lil.jpg" alt="Пользователь 2" class="reviews__avatar">
+                    <div class="reviews__content">
+                        <p class="reviews__user">"Прекрасные преподаватели и доступные материалы!"</p>
+                        <div class="reviews__rating">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <img src="images/kar.jpg" alt="Пользователь 3" class="reviews__avatar">
+                    <div class="reviews__content">
+                        <p class="reviews__user">"Я получила много полезных знаний и навыков!"</p>
+                        <div class="reviews__rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+            <form class="reviews__form" action="/" method="post">
+                <h3 class="reviews__form-title">Оставьте свой отзыв</h3>
+                <textarea class="reviews__textarea" placeholder="Ваш отзыв" required></textarea>
+                <button class="reviews__button" type="submit">Отправить отзыв</button>
+            </form>        
         </section>
 
         <section class="entrance">
             <form class="entrance__form" action="/" method="post">
                 <h4 class="entrance__tittle">Вход в личный кабинет</h4>
                 <label for="phone">Номер телефона:</label>
-                <input class="entrance__input" type="tel" id="phone" name="phone" placeholder="Номер телефона пользователя" required>
+                <input class="entrance__input" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
                 <label for="password">Пароль:</label>
                 <input class="entrance__input" type="password" id="password" name="password" placeholder="Пароль" required>
                 <button class="entrance__button" type="submit">Войти</button>
@@ -145,14 +211,40 @@
 
     </main>
 
-    <footer class="footer">
-        <img class='footer__logo' src="images/logo2.webp" alt="Логотип онлайн-курсов" width="100">
-        <p class="footer__title">Сайт создан Огарковой Юлией, группа Ст-23</p>
+    <footer class="footer container">
+        <div class="footer__header">
+            <img class='footer__logo' src="images/logo4.png" alt="Логотип онлайн-курсов" width="100">
+            <p class="footer__title">Сайт создан Огарковой Юлией, группа Ст-23</p>
+        </div>
         <ul class="footer__list">
-            <li class="footer__item"><a class="footer__link" href="#">Классы</a></li>
-            <li class="footer__item"><a class="footer__link" href="#">Лицензия</a></li>
+            <li class="footer__item1">
+                <div class="footer__li__img">
+                    <img src="images/Tilda_Icons_8yo_hours.png" alt="Лицензия" class="footer__icon1">
+                    <img src="images/Tecst.png" alt="Лицензия" class="footer__icon2">
+                </div>                
+                <a class="footer__link" href="#">Лицензия</a>
+            </li>
+            <li class="footer__item2">
+                <div class="footer__li__img1">
+                    <img src="images/Tilda_Icons_17ked_test.png" alt="Классы" class="footer__icon3"> 
+                    <img src="images/Tilda_Icons_17ked_test-1.png" alt="Классы" class="footer__icon4"> 
+                </div>
+                <a class="footer__link" href="catalog.html">Курсы</a>
+            </li>
         </ul>
-        <p class="footer__contacts">VK:<a href="https://vk.com/ogarkova_j">https://vk.com/ogarkova_j</a></p>
+        <p class="footer__social-title">Связаться с создателем в социальных сетях:</p>
+        <div class="footer__social-icons">
+            <a href="https://vk.com/ogarkova_j" target="_blank">
+                <img src="images/Vector.png" alt="VK" class="footer__social-icon">
+            </a>
+            <a href="https://t.me/ogarkova_j" target="_blank">
+                <img src="images/Vector-3.png" alt="Telegram" class="footer__social-icon"> 
+            </a>
+            <a href="https://https://wa.me/qr/A2GASAJ6HH5LN1" target="_blank">
+                <img src="images/Vector-5.png" alt="WhatsApp" class="footer__social-icon">
+            </a>
+        </div>
     </footer>
+
 </body>
 </html>

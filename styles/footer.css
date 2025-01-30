@@ -1,4 +1,120 @@
-.footer{
-    background-color: rgb(21, 22, 71);
-    color: rgb(143, 98, 30);
+.footer {
+    background-color: rgb(173, 216, 230);
+    padding: 10px; 
+    text-align: center;
+    border-top: 1px solid #ffba90;
+}
+
+.footer__header {
+    display: flex; /* Используем flexbox для выравнивания логотипа и названия */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: space-between; /* Распределяем элементы по ширине */
+    width: 100%; /* Занимаем всю ширину контейнера */
+    position: relative; /* Устанавливаем относительное позиционирование */
+}
+
+.footer__logo {
+    width: 60px; 
+    height: auto; 
+    margin-right: 10px; /* Отступ справа от логотипа */
+}
+
+.footer__title {
+    font-size: 17px; /* Размер шрифта для заголовка */
+    margin: 0; /* Убираем отступы сверху и снизу */
+    flex-grow: 1; /* Позволяет заголовку занимать оставшееся пространство */
+    text-align: center; /* Центрируем текст заголовка */
+}
+
+.footer__list {
+    display: flex;
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    justify-content: center;
+}
+
+.footer__item1 {
+    display: flex;
+    align-items: center; 
+    margin: 0 15px; 
+}
+
+.footer__item2 {
+    display: flex;
+    align-items: center; 
+    margin: 0 15px; 
+}
+
+.footer__link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: rgb(0, 80, 121); /* Цвет текста */
+}
+
+.footer__icon {
+    width: 15px; /* Ширина значка лицензии */
+    height: 15px; /* Высота значка лицензии */
+    margin-right: 5px; /* Отступ справа от значка */
+    vertical-align: middle; /* Выравнивание по центру */
+}
+
+.footer__social-title {
+    margin: 15px 0; /* Отступы сверху и снизу */
+    font-weight: bold; /* Жирный шрифт для заголовка социальных сетей */
+}
+
+.footer__social-icons {
+    display: flex; /* Используем flexbox для выравнивания значков */
+    justify-content: center; /* Центрируем значки по горизонтали */
+    margin-bottom: 10px; /* Отступ снизу для блока значков */
+}
+
+.footer__social-icon {
+    width: 20px; /* Ширина значка социальной сети */
+    height: 20px; /* Высота значка социальной сети */
+    margin: 0 10px; /* Отступы между значками */
+    vertical-align: middle; /* Выравнивание по центру */
+    transition: transform 0.3s; /* Плавный переход для эффекта при наведении */
+}
+
+.footer__social-icon:hover {
+    transform: scale(1.1); /* Увеличиваем значок при наведении */
+}
+
+.footer__li__img {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+    width: 40px; /* Ширина контейнера */
+    height: 40px; /* Высота контейнера */
+    margin-right: 10px;
+}
+
+.footer__icon1 {
+    position: absolute; /* Устанавливаем абсолютное позиционирование для изображений */
+    top: 0; /* Положение сверху */
+    left: 0; /* Положение слева */
+    width: 100%; /* Ширина изображения */
+    height: 100%; /* Высота изображения */
+    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+}
+.footer__icon2 {
+    opacity: 0.7; /* Прозрачность для второго изображения (по желанию) */
+}
+
+.footer__li__img1 {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+    width: 40px; /* Ширина контейнера */
+    height: 40px; /* Высота контейнера */
+    margin-right: 10px;
+}
+
+.footer__icon3 {
+    position: absolute; /* Устанавливаем абсолютное позиционирование для изображений */
+    top: 0; /* Положение сверху */
+    left: 0; /* Положение слева */
+    width: 100%; /* Ширина изображения */
+    height: 100%; /* Высота изображения */
+    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+}
+.footer__icon4 {
+    opacity: 0.7; /* Прозрачность для второго изображения (по желанию) */
 }
