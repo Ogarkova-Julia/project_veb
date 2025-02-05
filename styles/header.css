@@ -8,8 +8,8 @@
     color: rgba(39, 64, 255, 0.763);
     font-size: 20px;
     Text-align: center;
-    margin: 0; /* Убираем отступы */
-    font-weight: bold; /* Устанавливаем жирный шрифт */
+    margin: 0; 
+    font-weight: bold; 
 }
 
 .courses {
@@ -20,9 +20,9 @@
 }
 
 .header__logo-wrap {
-    display: flex; /* Используем flexbox для выравнивания логотипа и заголовка */
-    align-items: center; /* Центрируем элементы по вертикали */
-    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
     color: rgb(0, 80, 121); 
 }
 .header__logo {
@@ -34,8 +34,8 @@
 .header__menu {
     display: flex; 
     justify-content: space-between;
-    flex: 1; /* Занимает оставшееся пространство */
-    flex-shrink: 0; /* Не сжимается */
+    flex: 1; 
+    flex-shrink: 0; 
 }
 
 .menu__list {
@@ -50,68 +50,68 @@
 }
 
 .menu__link {
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none; 
     color: #333; 
-    padding: 10px 15px; /* Отступы для кликабельной области */
-    border-radius: 25px; /* Овальные углы */
-    transition: background-color 0.3s; /* Плавный переход для фона */
+    padding: 10px 15px; 
+    border-radius: 25px; 
+    transition: background-color 0.3s; 
 }
 
 .menu__link:hover {
-    background-color: #f1c19c; /* Цвет фона при наведении */
+    background-color: #f1c19c; 
 }
 
 .header__auth-buttons {
-    display: flex; /* Используем flexbox для кнопок */
-    align-items: center; /* Центрируем кнопки по вертикали */
-    position: fixed; /* Закрепляем кнопку */
-    top: 20px; /* Расположение от верхней части окна */
-    right: 20px; /* Расположение от правой части окна */
-    z-index: 1000; /* Устанавливаем высокий z-index, чтобы кнопка была поверх других элементов */
-    padding: 10px; /* Отступы вокруг кнопки */
+    display: flex; 
+    align-items: center; 
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    padding: 10px; 
 }
 
 .header__login {
-    padding: 10px 15px; /* Отступы для кнопки входа */
-    border: none; /* Убираем рамку */
-    border-radius: 25px; /* Овальные углы */
-    background-color: #007bff; /* Цвет фона кнопки входа */
-    color: white; /* Цвет текста */
-    cursor: pointer; /* Указатель при наведении */
-    transition: background-color 0.3s; /* Плавный переход для фона */
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 25px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
 }
 
 .header__login:hover {
-    background-color: #0056b3; /* Цвет фона при наведении */
+    background-color: #0056b3;
 }
 
 
 .header__form {
     display: flex; 
-    justify-content: flex-end; /* Выравниваем форму по правому краю */
-    width: 100%; /* Занимает всю ширину */
-    margin-top: 10px; /* Отступ сверху для разделения с меню и кнопками */
+    justify-content: flex-end; 
+    width: 100%;
+    margin-top: 10px; 
 }
 
 .header__form input[type="search"] {
-    padding: 10px; /* Отступы для поля ввода */
-    border: 1px solid #eda563; /* Рамка поля ввода */
+    padding: 10px; 
+    border: 1px solid #eda563; 
     border-radius: 25px; 
-    margin-right: 10px; /* Отступ между полем ввода и кнопкой */
+    margin-right: 10px; 
 }
 
 .header__form .search {
     padding: 10px 15px; 
     border: none; 
     border-radius: 25px; 
-    background-color: #007bff; /* Цвет фона кнопки поиска */
+    background-color: #007bff; 
     color: white; 
-    cursor: pointer; /* Указатель при наведении */
+    cursor: pointer;
     transition: background-color 0.3s; 
 }
 
 .header__form .search:hover {
-    background-color: #f8d1a4; /* Цвет фона при наведении */
+    background-color: #f8d1a4; 
 }
 
 .header{

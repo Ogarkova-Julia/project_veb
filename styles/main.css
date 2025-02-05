@@ -112,259 +112,259 @@
     border: 1px solid #f48506; 
     border-radius: 8px; 
     padding: 15px;
-    width: calc(33.33% - 20px); /* Ширина карточки (3 карточки в ряд с учетом отступов) */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для карточки */
-    transition: transform 0.3s; /* Плавный переход для эффекта при наведении */
+    width: calc(33.33% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; 
 }
 
 .courses__item:hover {
-    transform: translateY(-5px); /* Поднимаем карточку при наведении */
+    transform: translateY(-5px);
 }
 
 .courses__img {
-    display: block; /* Убираем пробелы под изображением */
-    margin: 0 auto 10px; /* Центрируем изображение и добавляем отступ снизу */
+    display: block; 
+    margin: 0 auto 10px; 
 }
 
 .courses__subtittle {
-    font-size: 1.2rem; /* Размер шрифта подзаголовка */
-    margin: 10px 0; /* Отступы сверху и снизу */
+    font-size: 1.2rem; 
+    margin: 10px 0; 
 }
 
 .courses__discription {
-    margin: 5px 0; /* Отступы сверху и снизу для описания */
-    color: #555; /* Цвет текста описания */
+    margin: 5px 0; 
+    color: #555; 
 }
 
 .courses__price {
-    font-size: 1.5rem; /* Размер шрифта для цены */
-    color: rgb(0, 80, 121); /* Цвет цены */
-    font-weight: bold; /* Жирный шрифт для цены */
-    margin-top: 10px; /* Отступ сверху */
+    font-size: 1.5rem;
+    color: rgb(0, 80, 121); 
+    font-weight: bold; 
+    margin-top: 10px; 
     display: block; 
 }
 
 .image-container {
-    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
-    width: 40px; /* Ширина контейнера */
-    height: 40px; /* Высота контейнера */
+    position: relative; 
+    width: 40px; 
+    height: 40px;
     margin: 0 auto;
 }
 
 .courses__img1 {
-    position: absolute; /* Устанавливаем абсолютное позиционирование для изображений */
-    top: 0; /* Положение сверху */
-    left: 0; /* Положение слева */
-    width: 100%; /* Ширина изображения */
-    height: 100%; /* Высота изображения */
-    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
 .courses__img2 {
-    opacity: 0.7; /* Прозрачность для второго изображения (по желанию) */
+    opacity: 0.7; 
 }
 
 .image-container1 {
-    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
-    width: 40px; /* Ширина контейнера */
-    height: 40px; /* Высота контейнера */
+    position: relative; 
+    width: 40px; 
+    height: 40px; 
     margin: 0 auto;
 }
 
 .courses__img3 {
-    position: absolute; /* Устанавливаем абсолютное позиционирование для изображений */
-    top: 0; /* Положение сверху */
-    left: 0; /* Положение слева */
-    width: 100%; /* Ширина изображения */
-    height: 100%; /* Высота изображения */
-    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
 }
 .courses__img4 {
-    opacity: 0.7; /* Прозрачность для второго изображения (по желанию) */
+    opacity: 0.7;
 }
 
 .image-container2 {
-    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
-    width: 40px; /* Ширина контейнера */
-    height: 40px; /* Высота контейнера */
+    position: relative; 
+    width: 40px; 
+    height: 40px;
     margin: 0 auto;
 }
 
 .courses__img5 {
-    position: absolute; /* Устанавливаем абсолютное позиционирование для изображений */
-    top: 0; /* Положение сверху */
-    left: 0; /* Положение слева */
-    width: 100%; /* Ширина изображения */
-    height: 100%; /* Высота изображения */
-    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
 }
 .courses__img6 {
-    opacity: 0.7; /* Прозрачность для второго изображения (по желанию) */
+    opacity: 0.7; 
 }
 
 
 
 
 .entrance {
-    display: flex; /* Используем flexbox для центрирования */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
-    height: 60vh; /* Высота секции на весь экран */
-    background-color: #cfe8f7; /* Цвет фона секции */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для секции */
-    border-radius: 8px; /* Закругленные углы */
-    padding: 20px; /* Внутренние отступы */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60vh; 
+    background-color: #cfe8f7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    padding: 20px; 
 }
 
 .entrance__form {
-    width: 300px; /* Ширина формы */
+    width: 300px; 
 }
 
 .entrance__tittle {
-    text-align: center; /* Центрируем заголовок */
-    margin-bottom: 20px; /* Отступ снизу */
-    font-size: 1.5rem; /* Размер шрифта заголовка */
-    color: #333; /* Цвет текста заголовка */
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 1.5rem; 
+    color: #333; 
 }
 
 label {
-    display: block; /* Отображаем метки как блочные элементы */
-    margin-bottom: 5px; /* Отступ снизу */
-    font-weight: bold; /* Жирный шрифт для меток */
-    color: #555; /* Цвет текста меток */
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #555; 
 }
 
 .entrance__input {
-    width: 100%; /* Ширина поля ввода */
-    padding: 10px; /* Внутренние отступы */
-    margin-bottom: 15px; /* Отступ снизу */
-    border: 1px solid #ccc; /* Цвет границы */
-    border-radius: 4px; /* Закругленные углы */
-    font-size: 1rem; /* Размер шрифта */
-    transition: border-color 0.3s; /* Плавный переход для изменения цвета границы */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 1rem; 
+    transition: border-color 0.3s; 
 }
 
 .entrance__input:focus {
-    border-color: #007bff; /* Цвет границы при фокусе */
-    outline: none; /* Убираем стандартный контур */
+    border-color: #007bff;
+    outline: none;
 }
 
 .entrance__button {
-    width: 100%; /* Ширина кнопки */
-    padding: 10px; /* Внутренние отступы */
-    background-color: #007bff; /* Цвет фона кнопки */
-    color: #ffffff; /* Цвет текста кнопки */
-    border: none; /* Убираем границу */
-    border-radius: 4px; /* Закругленные углы */
-    font-size: 1rem; /* Размер шрифта */
-    cursor: pointer; /* Указатель при наведении */
-    transition: background-color 0.3s; /* Плавный переход для изменения цвета фона */
+    width: 100%; 
+    padding: 10px; 
+    background-color: #007bff; 
+    color: #ffffff;
+    border: none;
+    border-radius: 4px; 
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .entrance__button:hover {
-    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+    background-color: #0056b3; 
 }
 
 
 
 
 .reviews {
-    background-color: #cfe8f7; /* Цвет фона блока отзывов */
-    padding: 20px; /* Внутренние отступы */
-    border-radius: 8px; /* Закругленные углы */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
-    max-width: 800px; /* Максимальная ширина блока */
-    margin: 20px auto; /* Центрируем блок по горизонтали */
+    background-color: #cfe8f7; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+    margin: 20px auto; 
 }
 
 .reviews__title {
-    text-align: center; /* Центрируем заголовок */
-    margin-bottom: 20px; /* Отступ снизу */
-    font-size: 2rem; /* Размер шрифта заголовка */
-    color: #333; /* Цвет текста заголовка */
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 2rem;
+    color: #333;
 }
 
 .reviews__list {
-    display: flex; /* Используем flexbox для выравнивания отзывов */
-    flex-direction: column; /* Вертикальное расположение */
+    display: flex; 
+    flex-direction: column; 
 }
 
 .reviews__item {
-    display: flex; /* Используем flexbox для выравнивания аватара и текста */
-    margin-bottom: 15px; /* Отступ снизу между отзывами */
-    padding: 10px; /* Внутренние отступы */
-    background-color: #ffffff; /* Цвет фона для каждого отзыва */
-    border-radius: 5px; /* Закругленные углы для отзыва */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Тень для отзыва */
+    display: flex; 
+    margin-bottom: 15px; 
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
 }
 
 .reviews__avatar {
-    width: 50px; /* Ширина аватара */
-    height: 50px; /* Высота аватара */
-    border-radius: 50%; /* Круглая форма аватара */
-    margin-right: 15px; /* Отступ справа от аватара */
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 15px; 
 }
 
 .reviews__content {
-    flex-grow: 1; /* Позволяет контенту занимать оставшееся пространство */
+    flex-grow: 1;
 }
 
 .reviews__user {
-    font-size: 1rem; /* Размер шрифта для текста отзыва */
-    color: #555; /* Цвет текста отзыва */
-    margin: 0; /* Убираем отступы */
+    font-size: 1rem;
+    color: #555; 
+    margin: 0;
 }
 
 .reviews__rating {
-    font-size: 1.2rem; /* Размер шрифта для рейтинга */
-    color: #FFD700; /* Цвет для звездного рейтинга */
+    font-size: 1.2rem; 
+    color: #FFD700; 
 }
 
 .reviews__form {
-    margin-top: 20px; /* Отступ сверху для формы */
-    padding: 15px; /* Внутренние отступы для формы */
-    background-color: #ffffff; /* Цвет фона формы */
-    border-radius: 5px; /* Закругленные углы для формы */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Тень для формы */
+    margin-top: 20px; 
+    padding: 15px; 
+    background-color: #ffffff; 
+    border-radius: 5px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .reviews__form-title {
-    font-size: 1.5rem; /* Размер шрифта заголовка формы */
-    margin-bottom: 10px; /* Отступ снизу */
-    color: #333; /* Цвет текста заголовка формы */
-    text-align: center; /* Центрируем заголовок формы */
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+    color: #333; 
+    text-align: center;
 }
 
 .reviews__textarea {
-    width: 100%; /* Ширина текстового поля */
-    height: 100px; /* Высота текстового поля */
-    padding: 10px; /* Внутренние отступы */
-    border: 1px solid #ccc; /* Цвет границы */
-    border-radius: 4px; /* Закругленные углы */
-    font-size: 1rem; /* Размер шрифта */
-    resize: none; /* Убираем возможность изменения размера текстового поля */
-    margin-bottom: 15px; /* Отступ снизу */
-    transition: border-color 0.3s; /* Плавный переход для изменения цвета границы */
+    width: 100%;
+    height: 100px; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 1rem; 
+    resize: none; 
+    margin-bottom: 15px; 
+    transition: border-color 0.3s; 
 }
 
 .reviews__textarea:focus {
-    border-color: #007bff; /* Цвет границы при фокусе */
-    outline: none; /* Убираем стандартный контур */
+    border-color: #007bff;
+    outline: none; 
 }
 
 .reviews__button {
-    width: 100%; /* Ширина кнопки */
-    padding: 10px; /* Внутренние отступы */
-    background-color: #007bff; /* Цвет фона кнопки */
-    color: #ffffff; /* Цвет текста кнопки */
-    border: none; /* Убираем границу */
-    border-radius: 4px; /* Закругленные углы */
-    font-size: 1rem; /* Размер шрифта */
-    cursor: pointer; /* Указатель при наведении */
-    transition: background-color 0.3s; /* Плавный переход для изменения цвета фона */
+    width: 100%; 
+    padding: 10px; 
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
 }
 
 .reviews__button:hover {
-    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+    background-color: #0056b3;
 }
 
 
@@ -428,11 +428,11 @@ label {
 }
 
 .proposal2:hover {
-    transform: translateY(-5px); /* Эффект поднятия при наведении */
+    transform: translateY(-5px); 
 }
 
 .proposal__list {
-    list-style: none; /* Убираем маркеры списка */
+    list-style: none; 
     padding: 0; 
     margin: 0; 
 }
@@ -448,47 +448,44 @@ label {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
 }
 
-.proposal__img {
-    margin-bottom: 10px; 
-}
-
 .proposal__subtittle {
-    font-size: 1.5rem; /* Размер шрифта для подзаголовка элемента */
-    color: #333; /* Цвет текста подзаголовка элемента */
-    margin: 0; /* Убираем отступы */
+    font-size: 1.5rem; 
+    color: #333; 
+    margin: 0;
 }
 
 .proposal__discription {
-    font-size: 0.9rem; /* Размер шрифта для описания */
-    color: #777; /* Цвет текста описания */
-    margin: 5px 0; /* Отступы сверху и снизу */
+    font-size: 0.9rem; 
+    color: #777; 
+    margin: 5px 0; 
 }
 
 .proposal__link {
-    display: inline-block; /* Отображаем ссылку как блочный элемент */
-    margin-top: 5px; /* Отступ сверху */
-    color: #007bff; /* Цвет текста ссылки */
-    text-decoration: none; /* Убираем подчеркивание */
-    transition: color 0.3s; /* Плавный переход для изменения цвета */
+    display: inline-block; 
+    margin-top: 5px; 
+    color: #007bff; 
+    text-decoration: none; 
+    transition: color 0.3s;
 }
 
 .proposal__link:hover {
-    color: #0056b3; /* Цвет текста ссылки при наведении */
+    color: #0056b3; 
 }
 
 .proposal__price {
-    font-size: 1.2rem; /* Размер шрифта для цены */
-    color: #f78317; /* Цвет текста для бесплатного предложения */
-    font-weight: bold; /* Жирный шрифт */
-    margin-top: 10px; /* Отступ сверху */
+    font-size: 1.2rem; 
+    color: #f78317; 
+    font-weight: bold;
+    margin-top: 10px; 
 }
 
 .proposal__img {
     position: relative; 
-    width: 60px; 
+    width: 40px; 
     height: 40px; 
     margin-right: 15px; 
-    float: left; 
+    margin-bottom: 10px; 
+    display: inline-block;
 }
 
 .proposal__img1 {
@@ -505,16 +502,17 @@ label {
 
 
 
+
 .proposal3 {
     background-color: #74a0d0;
 }
 .proposal__info1 {
-    font-size: 25px; /* Размер шрифта для текста */
-    color: #333; /* Цвет текста */
-    line-height: 1.6; /* Межстрочный интервал для улучшения читаемости */
-    margin: 0; /* Убираем отступы */
-    padding: 10px; /* Внутренние отступы для текста */
-    text-align: center; /* Центрируем текст */
+    font-size: 25px;
+    color: #333; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 10px; 
+    text-align: center; 
 }
 
 
