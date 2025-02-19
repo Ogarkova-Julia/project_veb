@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-.main__title__cat {
+.catalog__title {
     font-size: 1.8rem; 
     color: rgb(0, 80, 121);
 }
@@ -41,18 +41,18 @@
     transform: translateY(-5px); 
 }
 
-.courses__subtittle__cat {
+.catalog__subtittle {
     font-size: 1.2rem; 
     margin: 10px 0; 
     color: rgb(0, 80, 121)
 }
 
-.courses__discription__cat {
+.catalog__discription {
     margin: 5px 0;
     color: #fcc39a; 
 }
 
-.courses__op {
+.catalog__text {
     font-size: 1.2rem; 
     margin: 10px 0; 
     color: rgb(0, 80, 121)

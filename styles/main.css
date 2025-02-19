@@ -10,7 +10,7 @@
     font-weight: bold; 
 }
 
-.information__one{
+.services{
     display: flex;
     gap: 10px;
     background-color: #cfe8f7;
@@ -18,37 +18,31 @@
      padding: 10px;
 }
     
-.information__one__wrap-right{
+.services__wrap-right{
     width: 500px;
     flex-shrink: 0;
 }
 
-.information__one__button{
-    display: block;
-    padding: 10px;
-    color: rgb(234, 109, 8);
-    background-color: #f1c19c;
-    text-decoration: none;
+.services__button{
     margin-top: auto;
     margin-right: auto;
-    border-radius: 25px;
 }
 
-.information__one__button:hover{
+.services__button:hover{
     background-color: #f4a66b;
 }
 
-.information__one__wrap-left{
+.services__wrap-left{
     display: flex;
     flex-direction: column;
 }
 
-.information__one__picture {
+.services__picture {
     width: 450px; 
     height: auto; 
 }
 
-.information__two{
+.purpose{
     display: flex;
     gap: 10px;
     background-color: #cfe8f7;
@@ -56,17 +50,17 @@
     padding: 10px;
 }
     
-.information__two__wrap-left{
+.purpose__wrap-left{
     width: 300px;
     flex-shrink: 0;
 }
 
-.information__two__picture {
+.purpose__picture {
     width: 300px; 
     height: auto; 
 }
 
-.information__three {
+.problems {
     background-color:#cfe8f7;
     color: rgb(0, 0, 0);
     padding: 10px;   
@@ -151,7 +145,7 @@
     margin: 0 auto;
 }
 
-.courses__img1 {
+.courses__icon {
     position: absolute; 
     top: 0; 
     left: 0; 
@@ -159,18 +153,18 @@
     height: 100%;
     object-fit: cover;
 }
-.courses__img2 {
+.courses__picture {
     opacity: 0.7; 
 }
 
-.image-container1 {
+.accounting {
     position: relative; 
     width: 40px; 
     height: 40px; 
     margin: 0 auto;
 }
 
-.courses__img3 {
+.accounting__icon {
     position: absolute; 
     top: 0; 
     left: 0; 
@@ -178,18 +172,18 @@
     height: 100%;
     object-fit: cover; 
 }
-.courses__img4 {
+.accounting__picture {
     opacity: 0.7;
 }
 
-.image-container2 {
+.entrepreneurship {
     position: relative; 
     width: 40px; 
     height: 40px;
     margin: 0 auto;
 }
 
-.courses__img5 {
+.entrepreneurship__icon {
     position: absolute; 
     top: 0;
     left: 0; 
@@ -197,7 +191,7 @@
     height: 100%;
     object-fit: cover; 
 }
-.courses__img6 {
+.entrepreneurship__picture {
     opacity: 0.7; 
 }
 
@@ -375,16 +369,33 @@ label {
     background-color: #74a0d0;
     color: rgb(255, 255, 255);
     padding: 10px;
+    transition: transform 0.3s;
    }
-   .proposal-left{
+   .proposal:hover {
+    transform: scale(1.03);
+   }
+
+
+.proposal-left{
     width: 300px;
     flex-shrink: 0;
    }
-   .proposal-right{
+.proposal-right{
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: outline 0.3s;
    }
-   .proposal__picture {
+
+.proposal-right:hover {
+    outline: 2px solid #fc8600;
+}
+
+.proposal__picture {
     width: 200px; 
     height: auto; 
 }
@@ -395,7 +406,9 @@ label {
     margin: 0;
     font-weight: bold;
 }
-
+.proposal__info {
+    color: rgba(0, 0, 0, 0.763);
+}
 
 
 
@@ -413,12 +426,14 @@ label {
     margin: 0;
     font-weight: bold; 
 }
-.proposal__info {
+.benefit {
     color: rgba(0, 0, 0, 0.763);
 }
 
 
-.proposal2 {
+
+
+.time {
     background-color: #74a0d0; 
     padding: 20px; 
     border-radius: 8px; 
@@ -427,17 +442,17 @@ label {
     transition: transform 0.2s; 
 }
 
-.proposal2:hover {
+.time:hover {
     transform: translateY(-5px); 
 }
 
-.proposal__list {
+.time__list {
     list-style: none; 
     padding: 0; 
     margin: 0; 
 }
 
-.proposal__item {
+.time__item {
     display: flex; 
     flex-direction: column; 
     align-items: flex-start;
@@ -448,19 +463,19 @@ label {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
 }
 
-.proposal__subtittle {
+.time__subtittle {
     font-size: 1.5rem; 
     color: #333; 
     margin: 0;
 }
 
-.proposal__discription {
+.time__discription {
     font-size: 0.9rem; 
     color: #777; 
     margin: 5px 0; 
 }
 
-.proposal__link {
+.time__link {
     display: inline-block; 
     margin-top: 5px; 
     color: #007bff; 
@@ -468,18 +483,18 @@ label {
     transition: color 0.3s;
 }
 
-.proposal__link:hover {
+.time__link:hover {
     color: #0056b3; 
 }
 
-.proposal__price {
+.time__price {
     font-size: 1.2rem; 
     color: #f78317; 
     font-weight: bold;
     margin-top: 10px; 
 }
 
-.proposal__img {
+.time__img {
     position: relative; 
     width: 40px; 
     height: 40px; 
@@ -488,7 +503,7 @@ label {
     display: inline-block;
 }
 
-.proposal__img1 {
+.time__icon {
     position: absolute;
     top: 0; 
     left: 0;
@@ -496,17 +511,17 @@ label {
     height: 100%; 
     object-fit: cover; 
 }
-.proposal__img2 {
+.time__picture {
     opacity: 0.7;
 }
 
 
 
 
-.proposal3 {
+.attraction {
     background-color: #74a0d0;
 }
-.proposal__info1 {
+.attraction__info {
     font-size: 25px;
     color: #333; 
     line-height: 1.6; 
@@ -514,5 +529,6 @@ label {
     padding: 10px; 
     text-align: center; 
 }
+
 
 

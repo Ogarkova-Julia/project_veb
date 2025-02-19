@@ -17,14 +17,14 @@
         <form class="header__form">
             <label for="search"></label>
             <input type="search" id="search" placeholder="Введите запрос">
-            <button class="search" pe="submit">Поиск</button>
+            <button class="search" type="submit">Поиск</button>
         </form>        
         <div class="header__auth-buttons">
-            <button class="header__login" onclick="location.href='#';">Войти</button>
+            <button class="header__login button" onclick="location.href='#';">Войти</button>
         </div>
         <nav class="header__menu menu">
             <ul class="menu__list">
-                <li class="menu__item menu_item--active"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
                 <li class="menu__item"><a class="menu__link" href="catalog.html" target="_blank" rel="noopener noreferrer">Каталог курсов</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Email</a></li>
@@ -36,39 +36,39 @@
 
     <main class="catalog container">
         <div class="catalog__header">
-            <h1 class="main__title__cat">Каталог образовательных курсов</h1>
+            <h1 class="catalog__title">Каталог образовательных курсов</h1>
         </div>
         <section class="catalog">
             <ul class="catalog__list">
                 <li class="catalog__item">
-                    <a href="#" class="course__link">
-                        <h3 class="courses__subtittle__cat">Курсы по маркетингу</h3>
-                        <p class="courses__op">Изучите основы маркетинга, стратегии продвижения и методы привлечения клиентов.</p>
-                        <p class="courses__discription__cat">Время прохождения: 4 недели</p>
+                    <a href="#" class="catalog__link">
+                        <h3 class="catalog__subtittle">Курсы по маркетингу</h3>
+                        <p class="catalog__text">Изучите основы маркетинга, стратегии продвижения и методы привлечения клиентов.</p>
+                        <p class="catalog__discription">Время прохождения: 4 недели</p>
                     </a>
                 </li>
 
                 <li class="catalog__item">
-                    <a href="#" class="course__link">
-                        <h3 class="courses__subtittle__cat">Основы бухучёта</h3>
-                        <p class="courses__op">Познакомьтесь с основами бухгалтерского учета и финансовой отчетности.</p>
-                        <p class="courses__discription__cat">Время прохождения: 3 недели</p>
+                    <a href="#" class="catalog__link">
+                        <h3 class="catalog__subtittle">Основы бухучёта</h3>
+                        <p class="catalog__text">Познакомьтесь с основами бухгалтерского учета и финансовой отчетности.</p>
+                        <p class="catalog__discription">Время прохождения: 3 недели</p>
                     </a>
                 </li>
 
                 <li class="catalog__item">
-                    <a href="#" class="course__link">
-                        <h3 class="courses__subtittle__cat">Основы предпринимательства</h3>
-                        <p class="courses__op">Научитесь основам ведения бизнеса и разработки бизнес-планов.</p>
-                        <p class="courses__discription__cat">Время прохождения: 5 недель</p>
+                    <a href="#" class="catalog__link">
+                        <h3 class="catalog__subtittle">Основы предпринимательства</h3>
+                        <p class="catalog__text">Научитесь основам ведения бизнеса и разработки бизнес-планов.</p>
+                        <p class="catalog__discription">Время прохождения: 5 недель</p>
                     </a>
                 </li>
 
                 <li class="catalog__item">
-                    <a href="#" class="course__link">
-                        <h3 class="courses__subtittle__cat">Создание онлайн-бизнеса</h3>
-                        <p class="courses__op">Узнайте, как запустить и развивать свой онлайн-бизнес с нуля.</p>
-                        <p class="courses__discription__cat">Время прохождения: 6 недель</p>
+                    <a href="#" class="catalog__link">
+                        <h3 class="catalog__subtittle">Создание онлайн-бизнеса</h3>
+                        <p class="catalog__text">Узнайте, как запустить и развивать свой онлайн-бизнес с нуля.</p>
+                        <p class="catalog__discription">Время прохождения: 6 недель</p>
                     </a>
                 </li>
             </ul>
@@ -81,17 +81,17 @@
             <p class="footer__title">Сайт создан Огарковой Юлией, группа Ст-23</p>
         </div>
         <ul class="footer__list">
-            <li class="footer__item1">
+            <li class="footer__license">
                 <div class="footer__li__img">
-                    <img src="images/Tilda_Icons_8yo_hours.png" alt="Лицензия" class="footer__icon1">
-                    <img src="images/Tecst.png" alt="Лицензия" class="footer__icon2">
+                    <img src="images/Tilda_Icons_8yo_hours.png" alt="Лицензия" class="footer__license__icon">
+                    <img src="images/Tecst.png" alt="Лицензия" class="footer__license__picture">
                 </div>                
                 <a class="footer__link" href="#">Лицензия</a>
             </li>
-            <li class="footer__item2">
-                <div class="footer__li__img1">
-                    <img src="images/Tilda_Icons_17ked_test.png" alt="Классы" class="footer__icon3"> 
-                    <img src="images/Tilda_Icons_17ked_test-1.png" alt="Классы" class="footer__icon4"> 
+            <li class="footer__classes">
+                <div class="footer__img__classes">
+                    <img src="images/Tilda_Icons_17ked_test.png" alt="Классы" class="footer__classes__icon"> 
+                    <img src="images/Tilda_Icons_17ked_test-1.png" alt="Классы" class="footer__classes__picture"> 
                 </div>
                 <a class="footer__link" href="catalog.html">Курсы</a>
             </li>
@@ -109,6 +109,9 @@
             </a>
         </div>
     </footer>
+    
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>
 

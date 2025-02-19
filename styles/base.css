@@ -38,3 +38,24 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.button {
+    display: block;
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 25px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    text-decoration: none;    
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button--second {
+    color: rgb(234, 109, 8);
+    background-color: #f1c19c;
+}

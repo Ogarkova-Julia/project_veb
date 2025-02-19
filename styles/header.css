@@ -71,21 +71,6 @@
     padding: 10px; 
 }
 
-.header__login {
-    padding: 10px 15px; 
-    border: none;
-    border-radius: 25px; 
-    background-color: #007bff; 
-    color: white; 
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}
-
-.header__login:hover {
-    background-color: #0056b3;
-}
-
-
 .header__form {
     display: flex; 
     justify-content: flex-end; 
