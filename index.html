@@ -192,11 +192,18 @@
                     </div>
                 </div>
             </div>
+
+            <div id="reviews-container">
+                <!-- Здесь будут отображаться отзывы -->
+            </div>
+        
             <form class="reviews__form" action="/" method="post">
                 <h3 class="reviews__form-title">Оставьте свой отзыв</h3>
-                <textarea class="reviews__textarea" placeholder="Ваш отзыв" required></textarea>
-                <button class="reviews__button" type="submit">Отправить отзыв</button>
-            </form>        
+                <textarea id="review-input" class="reviews__textarea" placeholder="Введите ваш отзыв"></textarea>
+                <input class="fail" type="file" id="user-photo" accept="image/*">
+                <button id="submit-review" class="reviews__button" type="submit">Отправить отзыв</button>
+            </form>
+
         </section>
 
         <section class="entrance">
@@ -247,7 +254,34 @@
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <button id="chat-button" class="chat-button">
+        <img src="images/logo4.png" alt="Чат с поддержкой" class="chat-icon">
+    </button>
+
+    <div id="chat-window" class="chat-window hidden">
+        <div class="chat-header">
+            <h3>Мы всегда рады помочь!</h3>
+            <button id="close-chat" class="close-button">&times;</button>
+        </div>
+        <div class="chat-content">
+            <p>Есть вопросы? Пиши нам:</p>
+            <div class="social-links">
+                <a href="https://vk.com/ogarkova_j" target="_blank" class="social-icon">
+                    <img src="images/Vector.png" alt="Icon 1" class="social-icon-img">
+                </a>
+                <a href="https://https://wa.me/qr/A2GASAJ6HH5LN1" target="_blank" class="social-icon">
+                    <img src="images/Vector-5.png" alt="LinkedIn" class="social-icon-img">
+                </a>
+                <a href="https://t.me/ogarkova_j" target="_blank" class="social-icon">
+                    <img src="images/Vector-3.png" alt="LinkedIn" class="social-icon-img">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="scripts/script.js"></script>
 
 </body>
 </html>
