@@ -18,10 +18,12 @@
             <label for="search"></label>
             <input type="search" id="search" placeholder="Введите запрос">
             <button class="search" type="submit">Поиск</button>
-        </form>        
+        </form>   
+             
         <div class="header__auth-buttons">
-            <button class="header__login button" onclick="location.href='#';">Войти</button>
+            <button class="header__login button">Войти</button>
         </div>
+
         <nav class="header__menu menu">
             <ul class="menu__list">
                 <li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
@@ -133,6 +135,22 @@
                 </a>
             </div>
         </div>
+    </div>
+
+    <div class="applications__login" hidden>
+        <section class="application__login">
+            <div>
+                <button class="application__close__login" type="button">Закрыть</button> 
+                <form action="/" class="application__form__login" method="post">
+                    <h4 class="entrance__tit">Вход в личный кабинет</h4>
+                    <label for="pho">Номер телефона:</label>
+                    <input class="applications__input" type="pho" id="pho" name="pho" placeholder="Номер телефона" required>
+                    <label for="pas">Пароль:</label>
+                    <input class="applications__entrance__input" type="pas" id="pas" name="pas" placeholder="Пароль" required>
+                    <button class="applications__entrance__button" type="submit">Войти</button>
+                </form>
+            </div>
+        </section>
     </div>
 
 

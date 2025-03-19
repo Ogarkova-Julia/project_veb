@@ -553,22 +553,22 @@ label {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px; /* Ширина кнопки */
-    height: 60px; /* Высота кнопки */
-    background-color: #007bff; /* Синий цвет фона */
-    border: none; /* Убираем границы */
-    border-radius: 50%; /* Круглая форма */
+    width: 60px;
+    height: 60px; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: 50%; 
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
-    display: flex; /* Центрируем содержимое */
-    justify-content: center; /* Центрируем содержимое по горизонтали */
-    align-items: center; /* Центрируем содержимое по вертикали */
-    animation: pulse 1.5s infinite; /* Анимация пульсации */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    animation: pulse 1.5s infinite; 
 }
 
 .chat-icon {
-    width: 30px; /* Установите ширину изображения */
-    height: auto; /* Высота будет пропорциональна ширине */
+    width: 30px; 
+    height: auto; 
 }
 
 
@@ -577,7 +577,7 @@ label {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1); /* Увеличение на 10% */
+        transform: scale(1.1); 
     }
     100% {
         transform: scale(1);
@@ -641,7 +641,164 @@ label {
     display: none;
 }
 .social-icon-img {
-    width: 30px; /* Установите ширину изображения */
-    height: auto; /* Высота будет пропорциональна ширине */
-    display: inline-block; /* Убедитесь, что изображения отображаются в строку */
+    width: 30px; 
+    height: auto; 
+    display: inline-block; 
+}
+
+
+
+
+        .container__form {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            align-items: center;
+            background: white;
+            padding: 35px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .toggle-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login__container{
+            margin: 30px;
+        }
+        .click{
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+
+
+
+/*для модального окна зарегистрироваться*/
+.applications {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 60, 65, 0.7);
+  }
+  .application {
+      position: absolute;
+      top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    column-gap: 64px;
+    background-color: #007bff; 
+    color: #f5bd8e; 
+  }
+  .application__title {
+    font-size: 36px; 
+  }
+  .application__text {
+      margin-top: 20px;
+    font-size: 20px; 
+  }
+  .application__form {
+    width: 500px; 
+    display: flex; 
+    flex-direction: column;
+    row-gap: 10px; 
+  }
+
+  
+/*для кнопки закрытия*/
+.application__close {
+    position: absolute; 
+  top: 0; 
+  right: 0; 
+  padding: 10px;
+    background-color: #f8ad57; 
+}
+
+.application__close:hover {
+    outline: 2px solid #fc8600;
+    background-color: #54a4fa;
+}
+
+
+/*для модального окна войти*/
+.applications__login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 60, 65, 0.7);
+  }
+  .application__login {
+      position: absolute;
+      top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    column-gap: 64px;
+    background-color: #007bff; 
+  }
+ 
+
+  .application__form__login {
+    width: 500px; 
+    display: flex; 
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  
+/*для кнопки закрытия*/
+.application__close__login {
+    position: absolute;
+  top: 0; 
+  right: 0; 
+  padding: 10px; 
+    background-color: #f8ad57;
+}
+
+.application__close__login:hover {
+    outline: 2px solid #fc8600;
+    background-color: #54a4fa;
 }

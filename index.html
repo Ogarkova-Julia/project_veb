@@ -20,8 +20,9 @@
         </form>
         
         <div class="header__auth-buttons">
-            <button class="header__login button" onclick="location.href='#';">Войти</button>
+            <button class="header__login button">Войти</button>
         </div>
+
         <nav class="header__menu menu">
             <ul class="menu__list">
                 <li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
@@ -47,8 +48,12 @@
                 бизнес-планирование, маркетинг, финансовый менеджмент, управление проектами и юридические аспекты 
                 ведения бизнеса. Мы стремимся предоставить вам все необходимые инструменты и знания для успешного 
                 старта и развития вашего бизнеса. </p>
-            <a class="services__button button button--second" href="#"> Зарегестрироваться на курсы</a>
-            </div>
+            <button class="services__button button button--second"> Зарегестрироваться на курсы</button>
+            
+        
+        </div>
+            
+
             <div class="services__wrap-right">
                 <img class="services__picture" src="images/Scenes02.png" alt="Информация о нас" width="100">
             </div>
@@ -280,6 +285,43 @@
     </div>
     
 
+
+    <div class="applications" hidden>
+        <section class="application">
+            <div class="application__wrap">
+                <h3 class="application__title">
+                    Запишись на курсы <br> со скидкой 10%
+                </h3>
+                <p class="application__text">Акция действительна до 10 апреля 2025 года</p>
+            </div>
+            <div>
+            <button class="application__close" type="button">Закрыть</button> 
+            <form action="/" class="application__form">
+                <input class="application__input" type="text" placeholder="Имя">
+                <input class="application__input" type="tel" placeholder="Телефон">
+                <input class="application__input" type="email" placeholder="E-mail">
+                <button class="application__button">Отправить заявку</button>
+            </form>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="applications__login" hidden>
+        <section class="application__login">
+            <div>
+                <button class="application__close__login" type="button">Закрыть</button> 
+                <form action="/" class="application__form__login" method="post">
+                    <h4 class="entrance__tit">Вход в личный кабинет</h4>
+                    <label for="pho">Номер телефона:</label>
+                    <input class="applications__input" type="pho" id="pho" name="pho" placeholder="Номер телефона" required>
+                    <label for="pas">Пароль:</label>
+                    <input class="applications__entrance__input" type="pas" id="pas" name="pas" placeholder="Пароль" required>
+                    <button class="applications__entrance__button" type="submit">Войти</button>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <script src="scripts/script.js"></script>
 
