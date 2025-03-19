@@ -69,18 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const welcоmeButtonModal = document.querySelector(".services__button");
     const modalApplication = document.querySelector(".applications");
     if (welcоmeButtonModal&&modalApplication) {
-        //Для кнопки «Записаться на курс» добавляем обработчик события клика по этой кнопке:
             welcоmeButtonModal.addEventListener("click", () => {
-        // удаляем атрибут hidden у модального окна modalApplication и модальное окно становится видимым
            modalApplication.removeAttribute("hidden");
+           console.log('Кнопка открытия формы чата нажата.');
            });
         }
         
-        // добавляем обработчик события при клике вне области формы. Тогда каждый раз, когда пользователь кликает где-либо на фоне вокруг появившейся формы, будет вызываться функция,
         window.addEventListener("click", (event) => {
-        // проверяем, был ли клик на фоне модального окна
           if (event.target === modalApplication) {
-        //если условие выполняется, добавляем атрибут hiddenу модального окна modalApplicationи модальное окно становится невидимым
             modalApplication.setAttribute("hidden", true);
             }
         });
@@ -88,8 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
         closeModalButton.addEventListener("click", () => {
-        // Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
         modalApplication.setAttribute("hidden", true);
+        console.log('Кнопка закрытия формы чата нажата.');
     });
 
         
@@ -97,28 +93,40 @@ document.addEventListener('DOMContentLoaded', () => {
 const welcоmeButton = document.querySelector(".header__login");
 const modalApplic = document.querySelector(".applications__login");
 if (welcоmeButton&&modalApplic) {
-    //Для кнопки «Вход» добавляем обработчик события клика по этой кнопке:
         welcоmeButton.addEventListener("click", () => {
-    // удаляем атрибут hidden у модального окна modalApplic и модальное окно становится видимым
        modalApplic.removeAttribute("hidden");
+       console.log('Кнопка открытия формы чата нажата.');
        });
     }
     
-    // добавляем обработчик события при клике вне области формы. Тогда каждый раз, когда пользователь кликает где-либо на фоне вокруг появившейся формы, будет вызываться функция,
     window.addEventListener("click", (event) => {
-    // проверяем, был ли клик на фоне модального окна
       if (event.target === modalApplic) {
-    //если условие выполняется, добавляем атрибут hiddenу модального окна modalApplic модальное окно становится невидимым
         modalApplication.setAttribute("hidden", true);
-        }
+        }        
     });
     const closeModal = document.querySelector(".application__close__login");
 
 //Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
 closeModal.addEventListener("click", () => {
-// Добавляем атрибут hidden у модального окна modalApplic и модальное окно становится невидимым
 modalApplic.setAttribute("hidden", true);
+console.log('Кнопка закрытия формы чата нажата.');
 });
+
+
+//Создание массива//
+const СoursesContainer = document.querySelector(".courses");
+if (СoursesContainer) {
+    const dataTitleСourses= [
+        "Курс по маркетингу",
+        "Основы бухгалтерского учета",
+        "Основы предпринимательства",
+    ];
+    const titleСourses =
+    СoursesContainer.querySelectorAll(".courses__subtittle");
+    titleСourses.forEach((item, index) => {
+        item.textContent = dataTitleСourses[index];
+    });
+}
 
 }
 );
