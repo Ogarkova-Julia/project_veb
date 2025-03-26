@@ -116,6 +116,7 @@ console.log('Кнопка закрытия формы чата нажата.');
 
 
 
+
 //Создание массива//
 const СoursesContainer = document.querySelector(".courses");
 if (СoursesContainer) {
@@ -163,6 +164,25 @@ headerList.insertAdjacentHTML('beforeend', linkIndex);
         }
 }
 console.log('Навигацинное меню создано с помощью javascript!');
+
+
+    // Preloader страницы
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.content');
+    if (preloader && content) {
+        setTimeout(() => {
+            // Скрываем прелоадер
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+
+            // Показываем контент
+            content.style.display = 'block';
+
+            // Удаляем элемент из DOM
+            preloader.remove();
+        }, 3000); // Задержка 3 секунды
+    }
+    console.log('Preloader создана')
 
 
 }
