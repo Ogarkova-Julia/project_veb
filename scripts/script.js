@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Скрипт отработал корректно')
 
+    
     /* 2. Окно поддержки сайта */
 
         /* 
@@ -113,6 +114,8 @@ console.log('Кнопка закрытия формы чата нажата.');
 });
 
 
+
+
 //Создание массива//
 const СoursesContainer = document.querySelector(".courses");
 if (СoursesContainer) {
@@ -127,6 +130,40 @@ if (СoursesContainer) {
         item.textContent = dataTitleСourses[index];
     });
 }
+
+
+// задание 3.5. Массив динамического вывода меню//
+
+const headerMenu = document.querySelector('.header__menu');
+
+if (headerMenu){
+    const headerList = headerMenu.querySelector('.menu__list');
+
+    const menuData = {
+            link1: {
+                link:'index.html',
+                title:'Главная',
+            },
+            link2: {
+                link:'catalog.html',
+                title:'Каталог курсов',
+            },
+            link3: {
+                link:'#',
+                title:'Социальные сети',
+            }
+        }
+
+
+        for (const linkItem in menuData) {
+            const link = menuData[linkItem];
+      const linkIndex = `<li class="menu__item"><a href="${link.link}" class="menu__link">${link.title}</a></li>`;
+console.log(headerList);
+headerList.insertAdjacentHTML('beforeend', linkIndex);
+        }
+}
+console.log('Навигацинное меню создано с помощью javascript!');
+
 
 }
 );
