@@ -1,0 +1,14 @@
+[
+    {
+         "link": "index.html",
+         "title": "Главная"
+     },
+     {
+         "link": "catalog.html",
+         "title": "Каталог курсов"
+     },
+     {
+         "link": "#",
+         "title": "Социальные сети"
+     }
+ ]

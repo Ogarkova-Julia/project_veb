@@ -135,7 +135,7 @@ if (СoursesContainer) {
 
 // задание 3.5. Массив динамического вывода меню//
 
-const headerMenu = document.querySelector('.header__menu');
+/*const headerMenu = document.querySelector('.header__menu');
 
 if (headerMenu){
     const headerList = headerMenu.querySelector('.menu__list');
@@ -163,7 +163,49 @@ console.log(headerList);
 headerList.insertAdjacentHTML('beforeend', linkIndex);
         }
 }
-console.log('Навигацинное меню создано с помощью javascript!');
+console.log('Навигацинное меню создано с помощью javascript!'); */
+
+
+    /* задание 3.6 */
+    const menuContainer = document.querySelector('.menu');
+    if (menuContainer) {
+        const menuList = menuContainer.querySelector('.menu__list');
+
+        // Пример URL для получения данных с сервера
+        const apiUrl = 'data.json';
+
+        // Функция для создания карточки
+        const createMenu = (linkUrl, title) => {
+
+            // Шаблонные строки и подстановки
+            const menu = `
+                <li class="menu__item"><a class="menu__link" href="${linkUrl}">
+                    ${title}
+                </a></li>
+            `;
+
+            return menu;
+        }
+
+        // Загрузка данных с сервера
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // Данные
+                console.log(typeof (data)); // Тип полученных данных
+
+                data.forEach(item => {
+                    const menuElement = createMenu(item.link, item.title);
+                    menuList.insertAdjacentHTML('beforeend', menuElement);
+                });
+            })
+            .catch(error => {
+                console.error('Ошибка при загрузке данных:', error);
+            });
+    }
+
+
+
 
 
     // Preloader страницы
