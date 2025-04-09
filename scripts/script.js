@@ -66,54 +66,117 @@ document.addEventListener('DOMContentLoaded', () => {
         */
 
 
-    //Для формы зарегистрироваться//
-    const welcоmeButtonModal = document.querySelector(".services__button");
-    const modalApplication = document.querySelector(".applications");
-    if (welcоmeButtonModal&&modalApplication) {
-            welcоmeButtonModal.addEventListener("click", () => {
-           modalApplication.removeAttribute("hidden");
-           console.log('Кнопка открытия формы чата нажата.');
-           });
-        }
-        
-        window.addEventListener("click", (event) => {
-          if (event.target === modalApplication) {
-            modalApplication.setAttribute("hidden", true);
-            }
-        });
-        const closeModalButton = document.querySelector(".application__close");
+   // Для формы заявки
+const welcomeButtonModal = document.querySelector(".services__button");
+const modalApplication = document.querySelector(".applications");
+const closeModalButton = document.querySelector(".application__close");
 
-        //Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
-        closeModalButton.addEventListener("click", () => {
-        modalApplication.setAttribute("hidden", true);
-        console.log('Кнопка закрытия формы чата нажата.');
+// Открытие формы заявки
+if (welcomeButtonModal && modalApplication) {
+    welcomeButtonModal.addEventListener("click", () => {
+        modalApplication.removeAttribute("hidden");
+        console.log('Кнопка открытия формы заявки нажата.');
     });
+}
 
-        
-//для формы войти//
-const welcоmeButton = document.querySelector(".header__login");
-const modalApplic = document.querySelector(".applications__login");
-if (welcоmeButton&&modalApplic) {
-        welcоmeButton.addEventListener("click", () => {
-       modalApplic.removeAttribute("hidden");
-       console.log('Кнопка открытия формы чата нажата.');
-       });
+// Закрытие формы регистрации при клике вне области
+window.addEventListener("click", (event) => {
+    if (event.target === modalApplication) {
+        modalApplication.setAttribute("hidden", true);
     }
-    
-    window.addEventListener("click", (event) => {
-      if (event.target === modalApplic) {
-        modalApplication.setAttribute("hidden", true);
-        }        
-    });
-    const closeModal = document.querySelector(".application__close__login");
+});
 
-//Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
-closeModal.addEventListener("click", () => {
-modalApplic.setAttribute("hidden", true);
-console.log('Кнопка закрытия формы чата нажата.');
+// Закрытие формы регистрации по кнопке «Закрыть»
+if (closeModalButton) {
+    closeModalButton.addEventListener("click", () => {
+        modalApplication.setAttribute("hidden", true);
+        console.log('Кнопка закрытия формы заяки нажата.');
+    });
+}
+
+// Для формы войти
+const welcomeButton = document.querySelector(".header__login");
+const modalApplic = document.querySelector(".applications__login");
+const closeModal = document.querySelector(".application__close__login");
+
+// Открытие формы входа
+if (welcomeButton && modalApplic) {
+    welcomeButton.addEventListener("click", () => {
+        modalApplic.removeAttribute("hidden");
+        console.log('Кнопка открытия формы входа нажата.');
+        const login = modalApplic.querySelector('#pho');
+        const login_vel = window.localStorage.getItem("login");
+       if (login && login_vel){
+
+           login.value = login_vel;
+       }
+    });
+}
+
+// Закрытие формы входа при клике вне области
+window.addEventListener("click", (event) => {
+    if (event.target === modalApplic) {
+        modalApplic.setAttribute("hidden", true);
+    }
+});
+
+// Закрытие формы входа по кнопке «Закрыть»
+if (closeModal) {
+    closeModal.addEventListener("click", () => {
+        modalApplic.setAttribute("hidden", true);
+        console.log('Кнопка закрытия формы входа нажата.');
+    });
+};
+
+// Переключение между формами
+const switchToLoginButton = document.createElement('button');
+switchToLoginButton.textContent = "Перейти к входу";
+modalApplication.appendChild(switchToLoginButton);
+
+switchToLoginButton.addEventListener("click", () => {
+    modalApplication.setAttribute("hidden", true);
+    modalApplic.removeAttribute("hidden");
+    console.log('Переключение на форму входа.');
+});
+
+const switchToRegistrationButton = document.createElement('button');
+switchToRegistrationButton.textContent = "Перейти к заявке";
+modalApplic.appendChild(switchToRegistrationButton);
+
+switchToRegistrationButton.addEventListener("click", () => {
+    modalApplic.setAttribute("hidden", true);
+    modalApplication.removeAttribute("hidden");
+    console.log('Переключение на форму отправки заявки');
 });
 
 
+
+// Отправка данных на форме входа
+modalApplic.addEventListener('submit', event => {
+    event.preventDefault(); // Предотвращаем отправку формы
+
+
+    const password = modalApplic.querySelector('#pas').value;
+
+    const login = modalApplic.querySelector('#pho').value;
+
+
+    const errorMessage = modalApplic.querySelector('#error-message');
+
+    if (password !== "123") {
+        errorMessage.textContent = 'Пароли неверный';
+        errorMessage.style.color = 'red';
+        return;
+    }
+
+
+    // Здесь можно добавить отправку данных на сервер
+    errorMessage.textContent = 'Вход прошёл успешно!';
+    errorMessage.style.color = 'green';
+
+    // Запишем логин
+    window.localStorage.setItem("login", login);
+});
 
 
 
@@ -227,5 +290,32 @@ console.log('Навигацинное меню создано с помощью 
     console.log('Preloader создана')
 
 
+
+        // Карусель (слайдер)
+        const slider = document.querySelector('.swiper');
+
+        if (slider) {
+            const swiper = new Swiper(slider, {
+                // Дополнительные параметры
+                slidesPerView: 4, // Количество слайдов на экране
+                spaceBetween: 30, // Расстояние между слайдами
+                loop: true,  // Зацикливание слайдов
+    
+                // Пагинация
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+    
+                // Навигационные стрелки
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        }
+
+        
+
 }
 );
+

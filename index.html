@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
     <div class="preloader">
+        <img src="images/3d.jpg" alt="Loading..." class="loader-image">
         <div class="loader"></div>
     </div>
+
     <div class="content">
     <header class="header container">
         <a class="header__logo-wrap" href="index.html">
@@ -36,6 +39,7 @@
             </ul>
         </nav>
     </header>
+
     <main class="main container">
         <section class="information">
             <h2 class="information__title">Информация о нас</h2>
@@ -50,7 +54,7 @@
                 бизнес-планирование, маркетинг, финансовый менеджмент, управление проектами и юридические аспекты 
                 ведения бизнеса. Мы стремимся предоставить вам все необходимые инструменты и знания для успешного 
                 старта и развития вашего бизнеса. </p>
-            <button class="services__button button button--second"> Зарегестрироваться на курсы</button>
+            <button class="services__button button button--second"> Оставить заявку на курс</button>
             
         
         </div>
@@ -174,6 +178,50 @@
             </ul>
         </section>
 
+        <section class="section card card--slider swiper">
+            <h1 class="prepod">У нас лучшие преподаватели!</h1>
+            <div class="card__list card__list--slider swiper-wrapper">
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/ук.png" alt="Иконка" width="22" height="24">
+                    </span>
+                    <h3 class="card__title">Анна Сергеевна Кузнецова</h3>
+                    <p class="card__description"> Опытный маркетолог с 10-летним стажем, специализирующийся на digital-маркетинге. Обучает стратегиям SEO, SMM и контент-маркетинга, акцентируя внимание на практических кейсах.</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/ин.png" alt="Иконка" width="24" height="24">
+                    </span>
+                    <h3 class="card__title">Дмитрий Александрович Петров</h3>
+                    <p class="card__description">Финансовый консультант с опытом в инвестиционных компаниях. Обучает составлению бизнес-планов, управлению бюджетом и привлечению инвестиций.</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/лест.png" alt="Иконка" width="24" height="23">
+                    </span>
+                    <h3 class="card__title">Елена Викторовна Смирнова</h3>
+                    <p class="card__description">Сертифицированный специалист. Обучает методологиям Agile и Scrum, акцентируя внимание на коммуникации и организации рабочего процесса.</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/идеи.png" alt="Иконка" width="24" height="23">
+                    </span>
+                    <h3 class="card__title">Сергей Николаевич Иванов</h3>
+                    <p class="card__description">Юрист. Помогает разобраться в юридических вопросах открытия бизнеса, включая регистрацию компаний и защиту интеллектуальной собственности.</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/леди.png" alt="Иконка" width="24" height="23">
+                    </span>
+                    <h3 class="card__title">Мария Андреевна Лебедева</h3>
+                    <p class="card__description">Эксперт по продажам с 12-летним опытом в B2B и B2C. Обучает техникам эффективных продаж и построению клиентских отношений, проводя ролевые игры для закрепления навыков.</p>
+                </a>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+
         <section class="reviews">
             <h2 class="reviews__title">Отзывы наших пользователей</h2>
             <div class="reviews__list">
@@ -211,17 +259,6 @@
                 <button id="submit-review" class="reviews__button" type="submit">Отправить отзыв</button>
             </form>
 
-        </section>
-
-        <section class="entrance">
-            <form class="entrance__form" action="/" method="post">
-                <h4 class="entrance__tittle">Вход в личный кабинет</h4>
-                <label for="phone">Номер телефона:</label>
-                <input class="entrance__input" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
-                <label for="password">Пароль:</label>
-                <input class="entrance__input" type="password" id="password" name="password" placeholder="Пароль" required>
-                <button class="entrance__button" type="submit">Войти</button>
-            </form>
         </section>
 
     </main>
@@ -302,7 +339,7 @@
                 <input class="application__input" type="text" placeholder="Имя">
                 <input class="application__input" type="tel" placeholder="Телефон">
                 <input class="application__input" type="email" placeholder="E-mail">
-                <button class="application__button">Отправить заявку</button>
+                <button class="application__button">Оставить заявку на курс</button>
             </form>
             </div>
         </section>
@@ -320,11 +357,21 @@
                     <label for="pas">Пароль:</label>
                     <input class="applications__entrance__input" type="pas" id="pas" name="pas" placeholder="Пароль" required>
                     <button class="applications__entrance__button" type="submit">Войти</button>
+
+                    <div id="error-message"> 
+
+                    </div>
                 </form>
             </div>
+
+        
         </section>
     </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="scripts/script.js"></script>
 
 </body>

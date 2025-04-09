@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
    
+    <div class="preloader">
+        <img src="images/3d.jpg" alt="Loading..." class="loader-image">
+        <div class="loader"></div>
+    </div>
+
+    <div class="content">
     <header class="header container">
         <a class="header__logo-wrap" href="index.html">
             <img class='header__logo' src="images/logo4.png" alt="Логотип онлайн-курсов" width="100">
@@ -17,21 +24,18 @@
         <form class="header__form">
             <label for="search"></label>
             <input type="search" id="search" placeholder="Введите запрос">
-            <button class="search" type="submit">Поиск</button>
-        </form>   
-             
+            <button class="button" type="submit">Поиск</button>
+        </form>
+        
         <div class="header__auth-buttons">
             <button class="header__login button">Войти</button>
         </div>
 
         <nav class="header__menu menu">
             <ul class="menu__list">
-                <li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
+                <!--<li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
                 <li class="menu__item"><a class="menu__link" href="catalog.html" target="_blank" rel="noopener noreferrer">Каталог курсов</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Email</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Номер телефона</a></Li>
-                <li class="menu__item"><a class="menu__link" href="#">Социальные сети</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Социальные сети</a></li>-->
             </ul>
         </nav>
     </header>
@@ -153,6 +157,7 @@
         </section>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="scripts/script.js"></script>
 

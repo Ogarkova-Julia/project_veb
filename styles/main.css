@@ -198,69 +198,6 @@
 
 
 
-.entrance {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 60vh; 
-    background-color: #cfe8f7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; 
-    padding: 20px; 
-}
-
-.entrance__form {
-    width: 300px; 
-}
-
-.entrance__tittle {
-    text-align: center; 
-    margin-bottom: 20px; 
-    font-size: 1.5rem; 
-    color: #333; 
-}
-
-label {
-    display: block; 
-    margin-bottom: 5px; 
-    font-weight: bold; 
-    color: #555; 
-}
-
-.entrance__input {
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 15px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    font-size: 1rem; 
-    transition: border-color 0.3s; 
-}
-
-.entrance__input:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-.entrance__button {
-    width: 100%; 
-    padding: 10px; 
-    background-color: #007bff; 
-    color: #ffffff;
-    border: none;
-    border-radius: 4px; 
-    font-size: 1rem;
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-}
-
-.entrance__button:hover {
-    background-color: #0056b3; 
-}
-
-
-
-
 .reviews {
     background-color: #cfe8f7; 
     padding: 20px; 
@@ -564,6 +501,7 @@ label {
     justify-content: center; 
     align-items: center; 
     animation: pulse 1.5s infinite; 
+    z-index: 3;
 }
 
 .chat-icon {
@@ -710,6 +648,7 @@ label {
     width: 100%;
     height: 100%;
     background-color: rgba(58, 60, 65, 0.7);
+    z-index: 3;
   }
   .application {
       position: absolute;
@@ -764,6 +703,7 @@ label {
     width: 100%;
     height: 100%;
     background-color: rgba(58, 60, 65, 0.7);
+    z-index: 3;
   }
   .application__login {
       position: absolute;
@@ -802,3 +742,157 @@ label {
     outline: 2px solid #fc8600;
     background-color: #54a4fa;
 }
+
+
+
+
+
+
+.swiper-slide {
+    box-shadow: none;
+    border: 1px solid #ebeaea;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fdb100;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fdb100;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.prepod{
+    font-size: 1.8rem; 
+    color: rgb(246, 178, 68);
+}
+.card {
+    margin-top: 10px;
+}
+
+.card--slider {
+    padding: 60px 30px;
+}
+
+.card__list {
+    display: grid;
+    grid-template-columns: repeat(4, 278px);
+    gap: 29px;
+    padding-left: 0;
+    margin-top: 46px;
+}
+
+.card__list--slider {
+    display: flex;
+    gap: 0;
+    margin-top: 0;
+}
+
+.card__item {
+    position: relative;
+    top: 0;
+
+    padding: 24px 24px 34px;
+
+    text-decoration: none;
+
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 16px 72px 0 rgba(34, 39, 47, 0.05);
+
+    will-change: top;
+    transition: top 0.2s linear;
+}
+
+.card__item:hover {
+    top: 10px;
+}
+
+.card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 24px;
+
+    line-height: 30px;
+
+    border-radius: 12px;
+    background-color: rgba(255, 239, 204, 1);
+}
+
+.card__title {
+    margin-bottom: 16px;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #25292d;
+}
+
+.card__description {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #4a525a;
+}
+
+
+
+
+
+/* Стили для прелоадера */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    background: #fefefb;
+    transition: opacity 0.5s ease;
+}
+
+/* Анимация вращения */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader {
+    width: 100px; /* Увеличиваем размер круга */
+    height: 100px; /* Увеличиваем размер круга */
+    border: 8px solid #fbf9f4; /* Цвет круга */
+    border-top: 8px solid #84c4f5;
+    border-radius: 50%; /* Делаем круг */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Для позиционирования изображения */
+    animation: spin 1s linear infinite; /* Анимация вращения */
+}
+
+.loader-image {
+    width: 80px; /* Устанавливаем ширину изображения относительно круга */
+    height: auto; /* Сохраняем пропорции изображения */
+    border-radius: 50%; /* Делаем изображение круглым */
+    position: absolute; /* Позиционируем изображение внутри круга */
+    top: 50%; /* Центрируем по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Центрируем изображение */
+}
+
+
+
